@@ -22,7 +22,24 @@ p {
 }
 
 /* TRANSITION */
+.butterfly {
+  position: absolute;
+  width: 160px;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Ensure butterfly is on top of everything */
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
 
+.butterfly-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  pointer-events: none; /* Prevent interaction with butterfly */
+}
 a,
 .btn {
   transition: all 300ms ease;

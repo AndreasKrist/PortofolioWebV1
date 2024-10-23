@@ -69,3 +69,43 @@ window.onclick = function(event) {
     closeModal();
   }
 }
+
+//Butterfly
+let angle = 0; // Initialize an angle for circular movement
+
+function moveButterfly(butterfly) {
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
+
+    // Get the butterfly's dimensions
+    const butterflyWidth = butterfly.offsetWidth;
+    const butterflyHeight = butterfly.offsetHeight;
+
+    // Define radius for circular movement
+    const radius = Math.min(screenWidth, screenHeight) / 2; // Dynamic radius based on screen size
+
+    // Calculate new position using trigonometric functions
+    const centerX = screenWidth / 2; // Center of the screen in X
+    const centerY = screenHeight / 2; // Center of the screen in Y
+
+    // Calculate new position based on angle
+    const newX = centerX + radius * Math.cos(angle) - (butterflyWidth / 2);
+    const newY = centerY + radius * Math.sin(angle) - (butterflyHeight / 2);
+
+    // Update butterfly position and rotation
+    butterfly.style.transform = `translate(${newX}px, ${newY}px) rotate(${angle}rad)`; // Add rotation
+
+    // Update the angle for the next frame
+    angle += 0.01; // Adjust this value to change the speed of the circular motion
+
+    // Move the butterfly again after a fixed interval (16 ms for smooth animation)
+    setTimeout(() => moveButterfly(butterfly), 32);
+}
+
+window.onload = function() {
+    const butterfly = document.getElementById('butterfly');
+    moveButterfly(butterfly);
+};
+
+
+

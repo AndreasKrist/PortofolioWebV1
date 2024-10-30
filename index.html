@@ -42,7 +42,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.JPG" alt="John Doe profile picture" class="profile-pic"/>
+        <img src="./assets/profile-pic.JPG" alt="Andreas profile picture" class="profile-pic"/>
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -91,46 +91,30 @@
 
     </section>
 
-    <!-- <section id="about">
+    <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
+        <div class="sectionabout-container">
+          
           <img
-            src="./assets/about-pic.png"
+            src="./assets/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
+
         </div>
         <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I'm a genuinely curious person that is always keen to learn new things and seek philosophical insights to guide my 
+              lifelong learning path. I am fascinated by machine learning and artificial intelligence, which I feel have enormous 
+              promise for creating a more sustainable future. 
+            </p>
+            <p>
+              Along with my academic pursuits, I am passionate about artistic expression 
+              and connecting with an audience through different mediums. For me, achieving a full human experience requires a mix of the 
+              scientific/analytical and the creative/artistic.
             </p>
           </div>
         </div>
@@ -141,7 +125,7 @@
         class="icon arrow"
         onclick="location.href='./#experience'"
       />
-    </section> -->
+    </section>
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -158,7 +142,7 @@
                 />
                 <div>
                   <h3>Python</h3>
-                  <p>Basic</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -169,7 +153,7 @@
                 />
                 <div>
                   <h3>Excel</h3>
-                  <p>Advance</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -180,7 +164,7 @@
                 />
                 <div>
                   <h3>Power Bi</h3>
-                  <p>Basic</p>
+                  <p>Beginner</p>
                 </div>
               </article>
               <article>
@@ -191,7 +175,7 @@
                 />
                 <div>
                   <h3>Tensorflow</h3>
-                  <p>Basic</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -201,19 +185,19 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Skill5</h3>
-                  <p>Basic</p>
+                  <h3>HTML/CSS</h3>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
                 <img
-                  src="./assets/icon/css.svg"
+                  src="./assets/icon/pytorch.svg"
                   alt="css icon"
                   class="icon"
                 />
                 <div>
-                  <h3>CSS</h3>
-                  <p>Basic</p>
+                  <h3>Pytorch</h3>
+                  <p>Novice</p>
                 </div>
               </article>
             </div>
@@ -229,7 +213,7 @@
                 />
                 <div>
                   <h3>Premiere</h3>
-                  <p>Basic</p>
+                  <p>Proficient</p>
                 </div>
               </article>
               <article>
@@ -240,7 +224,7 @@
                 />
                 <div>
                   <h3>Photoshop</h3>
-                  <p>Intermediate</p>
+                  <p>Novice</p>
                 </div>
               </article>
               <article>
@@ -256,12 +240,12 @@
               </article>
               <article>
                 <img
-                  src="./assets/checkmark.png"
+                  src="./assets/icon/sd.svg"
                   alt="Experience icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Skill4</h3>
+                  <h3>Image Prompting</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -285,7 +269,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/thumbnail/thumb1.png"
                 alt="Project 1"
                 class="project-img"
               />
@@ -297,12 +281,12 @@
                 onclick="openModal()">
                 View
               </button>
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
-              </button>
+              </button> -->
             </div>
             <!-- Modal for Thumbnail Gallery -->
 <div id="thumbnailModal" class="modal">
@@ -310,9 +294,12 @@
   <div class="modal-content">
     <div class="thumbnail-slides">
       <!-- Add your thumbnail images here -->
-      <img src="assets/thumbnail/thumbnail (1).png" class="slide" style="display: block;">
-      <img src="assets/thumbnail/thumbnail (2).png" class="slide" style="display: none;">
-      <img src="assets/thumbnail/thumbnail (4).png" class="slide" style="display: none;">
+      <img src="assets/thumbnail/thumb1.png" class="slide" style="display: block;">
+      <img src="assets/thumbnail/thumb2.png" class="slide" style="display: none;">
+      <img src="assets/thumbnail/thumb3.png" class="slide" style="display: none;">
+      <img src="assets/thumbnail/thumb4.png" class="slide" style="display: none;">
+      <img src="assets/thumbnail/thumb5.png" class="slide" style="display: none;">
+      <img src="assets/thumbnail/thumb6.png" class="slide" style="display: none;">
     </div>
     <!-- Arrows for navigating thumbnails -->
     <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
@@ -328,20 +315,20 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Interview Video</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://youtu.be/DIQoaX83xV4')"
               >
-                Github
+                Link
               </button>
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
-              </button>
+              </button> -->
             </div>
           </div>
           <div class="details-container color-container">
@@ -352,22 +339,63 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Full Video Effects</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://youtu.be/aUdT5dtUnDU')"
               >
-                Github
+                Link
               </button>
-              <button
+              <!-- <button
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/'"
               >
                 Live Demo
-              </button>
+              </button> -->
             </div>
           </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">KosKita Website</h2>
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="openModal()">
+                View
+              </button> -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/JonathanSuryaS/Kosan')"
+              >
+                Github
+              </button>
+            </div>
+            <!-- Modal for Thumbnail Gallery -->
+<div id="thumbnailModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="thumbnail-slides">
+      <!-- Add your thumbnail images here -->
+      <img src="assets/thumb2/thumb1.png" class="slide" style="display: block;">
+      <img src="assets/thumb2/thumb2.png" class="slide" style="display: none;">
+      <img src="assets/thumb2/thumb3.png" class="slide" style="display: none;">
+  
+    </div>
+    <!-- Arrows for navigating thumbnails -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  </div>
+</div>
+          </div>          
+          
         </div>
         <!-- ----- -->
       </div>

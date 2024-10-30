@@ -51,6 +51,9 @@
   footer {
     height: 10vh;
   }
+  .text-container p{
+    font-size: 1.4rem;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -72,6 +75,9 @@
   footer {
     height: 10vh;
   }
+  .text-container p{
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -81,9 +87,18 @@
   #desktop-nav {
     display: none;
   }
+  .sectionabout-container{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-pic {
+    height: 35vh;
+    align-items: center;
+  }
   #hamburger-nav {
     display: flex;
-
+    
   }
   #experience,
   .experience-details-container {
@@ -200,6 +215,10 @@
   #contact,
   footer {
     height: 15vh;
+  }
+  .about-pic {
+    height: 25vh;
+    align-items: center;
   }
   #profile {
     height: 80vh;

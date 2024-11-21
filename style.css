@@ -390,7 +390,7 @@ section {
 
 .details-container {
   padding: 1.5rem;
-  flex: 1;
+  flex: 1 1 calc(20% - 16px);
   background: linear-gradient(30deg, #f4fcde, #ffffff);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
@@ -427,6 +427,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .article-container {

@@ -32,44 +32,57 @@ setInterval(revealText, 5000);
 // Start the animation when the page loads
 window.onload = revealText;
 
-// Carousel
-let currentSlideIndex = 0;
+let currentSlideIndexMap = {}; // Track current slide for each modal
 
-function openModal() {
-  document.getElementById('thumbnailModal').style.display = 'flex'; // Display modal only when the button is clicked
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = 'flex';
+  currentSlideIndexMap[modalId] = 0; // Initialize the slide index for this modal
+  showSlide(0, modalId); // Display the first slide
 }
 
-function closeModal() {
-  document.getElementById('thumbnailModal').style.display = 'none'; // Close modal when the close button is clicked
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.style.display = 'none';
 }
 
-function changeSlide(n) {
-  currentSlideIndex += n;
-  showSlide(currentSlideIndex);
+function changeSlide(n, modalId) {
+  currentSlideIndexMap[modalId] += n; // Update the slide index
+  showSlide(currentSlideIndexMap[modalId], modalId); // Show the slide
 }
 
-function showSlide(index) {
-  let slides = document.getElementsByClassName('slide');
+function showSlide(index, modalId) {
+  const modal = document.getElementById(modalId);
+  const slides = modal.getElementsByClassName('slide');
+  let currentSlideIndex = currentSlideIndexMap[modalId];
+
+  // Wrap around if index goes out of bounds
   if (index >= slides.length) {
-    currentSlideIndex = 0;
+    currentSlideIndexMap[modalId] = 0;
+  } else if (index < 0) {
+    currentSlideIndexMap[modalId] = slides.length - 1;
   }
-  if (index < 0) {
-    currentSlideIndex = slides.length - 1;
+
+  // Hide all slides
+  for (let slide of slides) {
+    slide.style.display = 'none';
   }
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-  slides[currentSlideIndex].style.display = 'block';
+
+  // Show the current slide
+  slides[currentSlideIndexMap[modalId]].style.display = 'block';
 }
 
-// Close
-window.onclick = function(event) {
-  let modal = document.getElementById('thumbnailModal');
-  if (event.target == modal) {
-    closeModal();
+// Close modal if clicking outside of it
+window.onclick = function (event) {
+  const modals = document.getElementsByClassName('modal');
+  for (let modal of modals) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
   }
-}
+};
 
+//------------------------------------------------------------
 //Butterfly
 let angle = 0; // Initialize an angle for circular movement
 

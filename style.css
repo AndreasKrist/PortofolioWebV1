@@ -189,11 +189,11 @@ a:hover {
 }
 
 section {
-  padding-top: 8vh;
+  /* padding-top: 8vh;
   height: 96vh;
-  margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: fit-content; */
+  margin: 0 10rem;
 }
 
 .section-container {
@@ -206,7 +206,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  height: 75vh;
   opacity: 0;
   animation: fadeIn 1s forwards ease-in-out;
 }
@@ -281,6 +281,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin: 25px 0;
 }
 
 .btn {
@@ -343,13 +344,16 @@ section {
 /* ABOUT SECTION */
 
 #about {
+  padding-top: 5rem;
   position: relative;
+  height: 70vh;
 }
 
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .about-details-container {
@@ -411,9 +415,12 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
   position: relative;
   opacity: 0;
   animation: fadeIn 1s forwards ease-in-out;
+  height: 65vh;
 }
 
 .experience-sub-title {
@@ -455,7 +462,7 @@ article .icon {
 
 #projects {
   position: relative;
-  padding-top: 12vh;
+  padding-top: 5rem;
 }
 
 .color-container {
@@ -485,7 +492,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 40vh;
   padding-top: 0;
 }
 
@@ -523,7 +530,7 @@ article .icon {
 /* FOOTER SECTION */
 
 footer {
-  height: 26vh;
+  height: 10vh;
   margin: 0 1rem;
 }
 

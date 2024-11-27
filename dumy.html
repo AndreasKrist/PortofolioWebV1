@@ -1,0 +1,219 @@
+<div id="thumbnailModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="thumbnail-slides">
+        <!-- Add your thumbnail images here -->
+        <img src="assets/thumbnail/thumb1.png" class="slide" style="display: block;">
+        <img src="assets/thumbnail/thumb2.png" class="slide" style="display: none;">
+        <img src="assets/thumbnail/thumb3.png" class="slide" style="display: none;">
+        <img src="assets/thumbnail/thumb4.png" class="slide" style="display: none;">
+        <img src="assets/thumbnail/thumb5.png" class="slide" style="display: none;">
+        <img src="assets/thumbnail/thumb6.png" class="slide" style="display: none;">
+      </div>
+      <!-- Arrows for navigating thumbnails -->
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+
+
+
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img
+        src="./assets/thumbnail/thumb1.png"
+        alt="Project 1"
+        class="project-img"
+      />
+    </div>
+    <h2 class="experience-sub-title project-title">Youtube Thumbnail</h2>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2 project-btn"
+        onclick="openModal('thumbnailModal1')">
+        View
+      </button>
+      <!-- <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://github.com/'"
+      >
+        Live Demo
+      </button> -->
+    </div>
+    <!-- Modal for Thumbnail Gallery -->
+    <div id="thumbnailModal1" class="modal">
+      <span class="close" onclick="closeModal('thumbnailModal1')">&times;</span>
+      <div class="modal-content">
+        <div class="thumbnail-slides">
+          <img src="assets/thumbnail/thumb1.png" class="slide" style="display: block;">
+          <img src="assets/thumbnail/thumb2.png" class="slide" style="display: none;">
+        </div>
+        <a class="prev" onclick="changeSlide(-1, 'thumbnailModal1')">&#10094;</a>
+        <a class="next" onclick="changeSlide(1, 'thumbnailModal1')">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img
+        src="./assets/project-2.png"
+        alt="Project 2"
+        class="project-img"
+      />
+    </div>
+    <h2 class="experience-sub-title project-title">Interview Video</h2>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2 project-btn"
+        onclick="window.open('https://youtu.be/DIQoaX83xV4')"
+      >
+        Link
+      </button>
+      <!-- <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://github.com/'"
+      >
+        Live Demo
+      </button> -->
+    </div>
+  </div>
+
+
+  <div class="details-container color-container">
+    <div class="article-container">
+      <img
+        src="./assets/project-3.png"
+        alt="Project 3"
+        class="project-img"
+      />
+    </div>
+    <h2 class="experience-sub-title project-title">Full Video Effects</h2>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2 project-btn"
+        onclick="window.open('https://youtu.be/aUdT5dtUnDU')"
+      >
+        Link
+      </button>
+      <!-- <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://github.com/'"
+      >
+        Live Demo
+      </button> -->
+    </div>
+  </div>
+
+
+
+// // Carousel
+// let currentSlideIndex = 0;
+
+// function openModal() {
+//   document.getElementById('thumbnailModal').style.display = 'flex'; // Display modal only when the button is clicked
+// }
+
+// function closeModal() {
+//   document.getElementById('thumbnailModal').style.display = 'none'; // Close modal when the close button is clicked
+// }
+
+// function changeSlide(n) {
+//   currentSlideIndex += n;
+//   showSlide(currentSlideIndex);
+// }
+
+// function showSlide(index) {
+//   let slides = document.getElementsByClassName('slide');
+//   if (index >= slides.length) {
+//     currentSlideIndex = 0;
+//   }
+//   if (index < 0) {
+//     currentSlideIndex = slides.length - 1;
+//   }
+//   for (let i = 0; i < slides.length; i++) {
+//     slides[i].style.display = 'none';
+//   }
+//   slides[currentSlideIndex].style.display = 'block';
+// }
+
+// // Close
+// window.onclick = function(event) {
+//   let modal = document.getElementById('thumbnailModal');
+//   if (event.target == modal) {
+//     closeModal();
+//   }
+// }
+//------------------------------------------------------------
+
+/* @media screen and (max-width: 1100px) {
+    .menu-links {
+      position: absolute;
+      top: 200%;
+      right: 0;
+  
+      width: 37vh;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3 ease-in-out;
+    }
+  } */
+
+  /* @media screen and (max-width: 2560px) {
+    #profile {
+      height: 80vh;
+      padding: 10vh 10vh 0 10vh;
+      margin: 0px 0px;
+    }
+    #experience{
+      height: 70vh;
+    }
+  
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #projects{
+      margin-bottom: 15rem;
+    }
+    #contact{
+      margin-top: 10rem;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+    footer {
+      height: 10vh;
+    }
+  } */
+  /* @media screen and (max-width: 1920px) {
+    #profile {
+      height: 80vh;
+      padding: 10vh 10vh 0 10vh;
+      margin: 0px 0px;
+    }
+    #experience{
+      height: 70vh;
+    }
+  
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #projects{
+      margin-bottom: 15rem;
+    }
+    #contact{
+      margin-top: 10rem;
+    }
+    #contact,
+    #projects {
+      height: fit-content;
+    }
+    footer {
+      height: 10vh;
+    }
+    .text-container p{
+      font-size: 1.4rem;
+    }
+  } */

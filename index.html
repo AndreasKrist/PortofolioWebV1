@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <div class="butterfly-container">
+    <!-- <div class="butterfly-container">
       <img src="./assets/moon.png" class="butterfly" id="butterfly" alt="Butterfly">
-    </div>
+    </div> -->
     <nav id="desktop-nav">
       <div class="logo">Andreas</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#profile">Profile</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -112,9 +112,8 @@
               promise for creating a more sustainable future. 
             </p>
             <p>
-              Along with my academic pursuits, I am passionate about artistic expression 
-              and connecting with an audience through different mediums. For me, achieving a full human experience requires a mix of the 
-              scientific/analytical and the creative/artistic.
+              Along with my academic interests, I am interested about artistic expression and connecting with an audience via various mediums. 
+              For me, creating a whole human experience requires a combination of science and art.
             </p>
           </div>
         </div>
@@ -276,340 +275,366 @@
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <!-- Project -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/thumbnail/thumb1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Youtube Thumbnail</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="openModal()">
-                View
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-            <!-- Modal for Thumbnail Gallery -->
-<div id="thumbnailModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-    <div class="thumbnail-slides">
-      <!-- Add your thumbnail images here -->
-      <img src="assets/thumbnail/thumb1.png" class="slide" style="display: block;">
-      <img src="assets/thumbnail/thumb2.png" class="slide" style="display: none;">
-      <img src="assets/thumbnail/thumb3.png" class="slide" style="display: none;">
-      <img src="assets/thumbnail/thumb4.png" class="slide" style="display: none;">
-      <img src="assets/thumbnail/thumb5.png" class="slide" style="display: none;">
-      <img src="assets/thumbnail/thumb6.png" class="slide" style="display: none;">
-    </div>
-    <!-- Arrows for navigating thumbnails -->
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-  </div>
-</div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Interview Video</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://youtu.be/DIQoaX83xV4')"
-              >
-                Link
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Full Video Effects</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://youtu.be/aUdT5dtUnDU')"
-              >
-                Link
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-8.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Logo Animation</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://youtu.be/P9G_zWL99bg?si=t84cB_r5DTsG5XNa')"
-              >
-                Link
-              </button>
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button> -->
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-7.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Architect Web</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://architect-web-test.netlify.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/AndreasKrist/Architect-Web')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-5.png"
-                alt="Project 5"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">CS Gallery Web</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://csgallery.netlify.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open=('https://github.com/AndreasKrist/cs-gallery/tree/main')"
-              >
-               Github
-              </button>
-            </div>
-          </div>  
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-6.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Paypal Clone</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://payplayclone.netlify.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/AndreasKrist/PayPal-Clone')"
-              >
-              Github
-              </button>
-            </div>
-          </div>     
-   
+      <!-- Projects -->
 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-4.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">KosKita Website</h2>
-            <div class="btn-container">
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="openModal()">
-                View
-              </button> -->
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/JonathanSuryaS/Kosan')"
-              >
-                Github
-              </button>
-            </div>
-            <!-- Modal for Thumbnail Gallery -->
-<div id="thumbnailModal" class="modal">
-  <span class="close" onclick="closeModal()">&times;</span>
-  <div class="modal-content">
-    <div class="thumbnail-slides">
-      <!-- Add your thumbnail images here -->
-      <img src="assets/thumb2/thumb1.png" class="slide" style="display: block;">
-      <img src="assets/thumb2/thumb2.png" class="slide" style="display: none;">
-      <img src="assets/thumb2/thumb3.png" class="slide" style="display: none;">
-  
-    </div>
-    <!-- Arrows for navigating thumbnails -->
-    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-    <a class="next" onclick="changeSlide(1)">&#10095;</a>
-  </div>
-</div>
-          </div> 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-10.png"
-                alt="Project 10"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://heart-diseaseclassification-andre.streamlit.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open=('https://github.com/AndreasKrist/Heart-Disease_Classification')"
-              >
-               Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-12.png"
-                alt="Project 12"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Machinery Vehicle Price Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://heavy-machinery-price-prediction-andre.streamlit.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open=('https://github.com/AndreasKrist/heavy-machinery-Price-Prediction')"
-              >
-               Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-11.png"
-                alt="Project 11"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Asthma Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://asthma-detection-andre-1.streamlit.app/')"
-              >
-                Link
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open=('https://github.com/AndreasKrist/Asthma-Detection')"
-              >
-               Github
-              </button>
-            </div>
-          </div> 
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-13.png"
-                alt="Project 13"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Pneumonia X-Ray Detection</h2>
-            <div class="btn-container">
-              <!-- <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://csgallery.netlify.app/')"
-              >
-                Link
-              </button> -->
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open=('https://github.com/AndreasKrist/Pneumonia-Classification-Deep_Learning')"
-              >
-               Github
-              </button>
-            </div>
-          </div>        
-          
+      <!-- Project-1 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-1.png"
+            alt="Project 1"
+            class="project-img"
+          />
         </div>
-        <!-- ----- -->
+        <h2 class="experience-sub-title project-title">Architect Web</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://architect-web-test.netlify.app/')">
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/AndreasKrist/Architect-Web')">
+            Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-2 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-2.png"
+            alt="Project 2"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Galleries Web</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://csgallery.netlify.app/')">
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open=('https://github.com/AndreasKrist/cs-gallery/tree/main')">
+           Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-3 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-3.png"
+            alt="Project 3"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Paypal Clone</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://payplayclone.netlify.app/')">
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/AndreasKrist/PayPal-Clone')">
+          Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-4 -->   
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-4.png"
+            alt="Project 4"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">KosKita Web</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="openModal('thumbnailModal1')">
+            View
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/JonathanSuryaS/Kosan')"
+          >
+            Github
+          </button>
+        </div>
+        <!--Carousel-->
+        <div id="thumbnailModal1" class="modal">
+          <span class="close" onclick="closeModal('thumbnailModal1')">&times;</span>
+          <div class="modal-content">
+            <div class="thumbnail-slides">
+              <img src="assets/view1/1.png" class="slide" style="display: block;">
+              <img src="assets/view1/2.png" class="slide" style="display: none;">
+              <img src="assets/view1/3.png" class="slide" style="display: none;">
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'thumbnailModal1')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'thumbnailModal1')">&#10095;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project-5 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-5dark.png"
+            alt="Project 5"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Heart Disease Prediction</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://heart-diseaseclassification-andre.streamlit.app/')"
+          >
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open=('https://github.com/AndreasKrist/Heart-Disease_Classification')"
+          >
+           Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-6 -->   
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-6.png"
+            alt="Project 6"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Asthma Detection</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://heart-diseaseclassification-andre.streamlit.app/')"
+          >
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open=('https://github.com/AndreasKrist/Heart-Disease_Classification')"
+          >
+           Github
+          </button>
+        </div>
+      </div>
+          
+      <!-- Project-7 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-7.png"
+            alt="Project 7"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Pneumonia Image Classification</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="openModal('thumbnailModal2')">
+            View
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://github.com/AndreasKrist/Pneumonia-Classification-Deep_Learning')"
+          >
+            Github
+          </button>
+        </div>
+        <!--Carousel-->
+        <div id="thumbnailModal2" class="modal">
+          <span class="close" onclick="closeModal('thumbnailModal2')">&times;</span>
+          <div class="modal-content">
+            <div class="thumbnail-slides">
+              <img src="assets/view2/1.png" class="slide" style="display: block;">
+              <img src="assets/view2/2.png" class="slide" style="display: none;">
+              <img src="assets/view2/3.png" class="slide" style="display: none;">
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'thumbnailModal2')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'thumbnailModal2')">&#10095;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project-8 -->  
+     
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-8dark.png"
+            alt="Project 8"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Machinery Vehicle Price Prediction</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://heavy-machinery-price-prediction-andre.streamlit.app/')"
+          >
+            Link
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open=('https://github.com/AndreasKrist/heavy-machinery-Price-Prediction')"
+          >
+           Github
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-9 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-9.png"
+            alt="Project 9"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Business Documentation</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://youtu.be/J0upTjqtwtM')">
+            Link
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-10 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-10.png"
+            alt="Project 10"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Logo Animation</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.open('https://youtu.be/Ef7OfhUriww')">
+            Link
+          </button>
+        </div>
+      </div>
+
+      <!-- Project-11 -->     
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-11.png"
+            alt="Project 11"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Logo Illustration</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="openModal('thumbnailModal3')">
+            View
+          </button>
+        </div>
+        <!--Carousel-->
+        <div id="thumbnailModal3" class="modal">
+          <span class="close" onclick="closeModal('thumbnailModal3')">&times;</span>
+          <div class="modal-content">
+            <div class="thumbnail-slides">
+              <img src="assets/view3/1.png" class="slide" style="display: block;">
+              <img src="assets/view3/2.png" class="slide" style="display: none;">
+              <img src="assets/view3/3.png" class="slide" style="display: none;">
+              <img src="assets/view3/4.png" class="slide" style="display: none;">
+              <img src="assets/view3/5.png" class="slide" style="display: none;">
+              <img src="assets/view3/6.png" class="slide" style="display: none;">
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'thumbnailModal3')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'thumbnailModal3')">&#10095;</a>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Project-12 -->
+
+      <div class="details-container color-container">
+        <div class="article-container">
+          <img
+            src="./assets/Project/project-12.png"
+            alt="Project 12"
+            class="project-img"
+          />
+        </div>
+        <h2 class="experience-sub-title project-title">Youtube Thumbnail</h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="openModal('thumbnailModal4')">
+            View
+          </button>
+        </div>
+        <!--Carousel-->
+        <div id="thumbnailModal4" class="modal">
+          <span class="close" onclick="closeModal('thumbnailModal4')">&times;</span>
+          <div class="modal-content">
+            <div class="thumbnail-slides">
+              <img src="assets/view4/1.png" class="slide" style="display: block;">
+              <img src="assets/view4/2.png" class="slide" style="display: none;">
+              <img src="assets/view4/3.png" class="slide" style="display: none;">
+              <img src="assets/view4/4.png" class="slide" style="display: none;">
+              <img src="assets/view4/5.png" class="slide" style="display: none;">
+              <img src="assets/view4/6.png" class="slide" style="display: none;">
+            </div>
+            <a class="prev" onclick="changeSlide(-1, 'thumbnailModal4')">&#10094;</a>
+            <a class="next" onclick="changeSlide(1, 'thumbnailModal4')">&#10095;</a>
+          </div>
+        </div>
+      </div>
+        </div>
+        <!------------------->
       </div>
       <img
-        src="./assets/arrow.png"
+        src="./assets/arrowup.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#profile'"
       />
     </section>
+
+    <!-- Contact -->
+
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -643,7 +668,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Andreas Kristianto. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Andreas Mardohar Kristianto. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
